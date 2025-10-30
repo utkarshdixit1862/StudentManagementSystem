@@ -1,6 +1,4 @@
-=====================================================================================
 🎓 STUDENT MANAGEMENT SYSTEM (C++)
-=====================================================================================
 
 A simple and efficient **Student Management System** built using **C++** that performs 
 basic **CRUD (Create, Read, Update, Delete)** operations. This console-based project 
