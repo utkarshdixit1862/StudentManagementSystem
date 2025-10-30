@@ -27,10 +27,9 @@ and searching for student details.
 -------------------------------------------------------------------------------------
 🧱 PROJECT STRUCTURE
 -------------------------------------------------------------------------------------
-📁 Student-Management-System/
-<br>
+📁 Student-Management-System/<br>
 │
-├── main.cpp <br>          # Source code file (this file)
+├── main.cpp           # Source code file (this file)<br>
 ├── README.md          # Project documentation
 
 -------------------------------------------------------------------------------------
