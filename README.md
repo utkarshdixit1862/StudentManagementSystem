@@ -30,7 +30,7 @@ and searching for student details.
 📁 Student-Management-System/
 <br>
 │
-├── main.cpp           # Source code file (this file)
+├── main.cpp <br>          # Source code file (this file)
 ├── README.md          # Project documentation
 
 -------------------------------------------------------------------------------------
