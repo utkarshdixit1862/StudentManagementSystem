@@ -37,7 +37,7 @@ and searching for student details.
 -------------------------------------------------------------------------------------
 🖥️ Using Command Line:
 1. Clone the Repository
-   git clone https://github.com/utkarshdixit1862/Student-Management-System.git
+   git clone https://github.com/utkarshdixit1862/StudentManagementSystem.git
    cd Student-Management-System
 
 2. Compile the Code
