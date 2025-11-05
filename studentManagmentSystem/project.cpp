@@ -13,7 +13,7 @@ struct Student {
 
 vector<Student> students;
 
-// Function to add a new student
+// Function to add a single student
 void addStudent() {
     Student s;
     cout << "\nEnter Student ID: ";
@@ -33,7 +33,20 @@ void addStudent() {
     getline(cin, s.phone);
 
     students.push_back(s);
-    cout << "\n✅ Student added successfully!\n";
+    cout << "\n Student added successfully!\n";
+}
+
+// ✅ Function to add multiple students at once
+void addMultipleStudents() {
+    int count;
+    cout << "\nHow many students do you want to add? ";
+    cin >> count;
+    cin.ignore();
+
+    for (int i = 1; i <= count; i++) {
+        cout << "\n--- Enter details for Student " << i << " ---\n";
+        addStudent();
+    }
 }
 
 // Function to display all students
@@ -73,7 +86,7 @@ void updateStudent() {
             cout << "Enter Phone: ";
             getline(cin, s.phone);
 
-            cout << "\n✅ Student details updated successfully!\n";
+            cout << "\n Student details updated successfully!\n";
             return;
         }
     }
@@ -120,27 +133,29 @@ int main() {
     int choice;
     do {
         cout << "\n===== Student Management System =====\n";
-        cout << "1. Add Student\n";
-        cout << "2. Show All Students\n";
-        cout << "3. Search Student\n";
-        cout << "4. Update Student\n";
-        cout << "5. Delete Student\n";
-        cout << "6. Exit\n";
+        cout << "1. Add Single Student\n";
+        cout << "2. Add Multiple Students\n"; // ✅ New Option
+        cout << "3. Show All Students\n";
+        cout << "4. Search Student\n";
+        cout << "5. Update Student\n";
+        cout << "6. Delete Student\n";
+        cout << "7. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
 
         switch (choice) {
             case 1: addStudent(); break;
-            case 2: showStudents(); break;
-            case 3: searchStudent(); break;
-            case 4: updateStudent(); break;
-            case 5: deleteStudent(); break;
-            case 6: cout << "\n👋 Exiting... Thank you!\n"; break;
+            case 2: addMultipleStudents(); break; // ✅ New Case
+            case 3: showStudents(); break;
+            case 4: searchStudent(); break;
+            case 5: updateStudent(); break;
+            case 6: deleteStudent(); break;
+            case 7: cout << "\n👋 Exiting... Thank you!\n"; break;
             default: cout << "\n❌ Invalid choice! Try again.\n";
         }
 
-    } while (choice != 6);
+    } while (choice != 7);
 
     return 0;
 }
