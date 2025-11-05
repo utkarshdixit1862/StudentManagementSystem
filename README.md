@@ -49,12 +49,13 @@ and searching for student details.
 🧩 EXAMPLE MENU
 -------------------------------------------------------------------------------------
 ===== Student Management System =====
-1. Add Student
-2. Show All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
+1. Add Single Student
+2. Add Multiple Student
+3. Show All Students
+4. Search Student
+5. Update Student
+6. Delete Student
+7. Exit
 Enter your choice:
 
 -------------------------------------------------------------------------------------
